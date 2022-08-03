@@ -5,6 +5,7 @@
     margin: 0%;
     ::selection {
         background-color: rgba(37, 37, 37, 0.671);
+        color: white;
     }
 }
 
@@ -35,7 +36,7 @@ html {
     }
     @keyframes scale_up {
         from {
-            transform: scale(5%);
+            transform: scale(50%);
         }
         75% {
             transform: scale(100%);
