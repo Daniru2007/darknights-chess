@@ -15,7 +15,6 @@ body,
 html {
     overflow-x: hidden;
     height: 100%;
-    background-color: var(--background-color);
     color: var(--font-color);
 }
 
@@ -55,11 +54,19 @@ html {
 }
 
 .coaches {
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    * {
+        background-color: var(--background-color);
+    }
     h1 {
         color: var(--head-font-color);
         font-size: 50px;
-        margin: 50px;
+        padding: 50px;
     }
 
     .coaches__content {
@@ -83,5 +90,22 @@ html {
                 padding: 10px;
             }
         }
+    }
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin: 50px 100px;
+    padding: 50px;
+    background-color: var(--background-color);
+    p {
+        font-size: 20px;
+        padding: 10px;
+    }
+    img {
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
     }
 }
