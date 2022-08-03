@@ -1,9 +1,13 @@
+:root {
+    --font-color: rgb(219, 219, 219);
+}
 * {
     margin: 0%;
     ::selection {
         background-color: rgba(37, 37, 37, 0.671);
     }
 }
+
 body,
 html {
     overflow-x: hidden;
@@ -22,7 +26,25 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
-        color: white;
-        font-size: 10rem;
+        color: var(--font-color);
+        font-size: 5em;
+        padding: 50px;
+        text-align: center;
+        transform: scale(100%);
+        animation: scale_up 1s ease-in-out;
+    }
+    @keyframes scale_up {
+        from {
+            transform: scale(5%);
+        }
+        75% {
+            transform: scale(100%);
+        }
+        90% {
+            transform: scale(90%);
+        }
+        to {
+            transform: scale(100%);
+        }
     }
 }
