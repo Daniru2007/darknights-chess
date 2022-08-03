@@ -1,5 +1,7 @@
 :root {
-    --font-color: rgb(219, 219, 219);
+    --head-font-color: #dddab2;
+    --font-color: #9d9481;
+    --background-color: #181a1b;
 }
 * {
     margin: 0%;
@@ -13,6 +15,8 @@ body,
 html {
     overflow-x: hidden;
     height: 100%;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .background {
@@ -27,7 +31,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
-        color: var(--font-color);
+        color: var(--head-font-color);
         font-size: 5em;
         padding: 50px;
         text-align: center;
@@ -46,6 +50,38 @@ html {
         }
         to {
             transform: scale(100%);
+        }
+    }
+}
+
+.coaches {
+    height: 30vh;
+    h1 {
+        color: var(--head-font-color);
+        font-size: 50px;
+        margin: 50px;
+    }
+
+    .coaches__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .coaches__coach {
+            display: flex;
+            align-items: center;
+            margin: 50px 100px;
+            p {
+                font-size: 20px;
+                padding: 10px;
+            }
+            img {
+                border-radius: 100%;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+            }
         }
     }
 }
