@@ -101,11 +101,12 @@ html {
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: auto auto;
-    margin: 50px 00px;
+    // margin: 50px 00px;
     padding: 50px;
     .player {
         display: flex;
-        background-color: var(--background-color);
+        background-color: #181a1bb2;
+        backdrop-filter: blur(10px);
         margin: 10px;
         img {
             width: 250px;
