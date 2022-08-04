@@ -1,4 +1,4 @@
-let players = document.querySelectorAll(".right,.left");
+let players = document.querySelectorAll(".right,.left,.coaches__coach");
 
 function displayPlayers(entries, observer) {
     entries.forEach((entry) => {
