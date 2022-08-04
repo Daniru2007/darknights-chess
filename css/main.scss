@@ -150,3 +150,23 @@ html {
         }
     }
 }
+
+/* width */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: var(--head-font-color);
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--font-color);
+}
