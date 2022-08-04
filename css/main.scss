@@ -93,19 +93,33 @@ html {
     }
 }
 
-.player {
-    display: flex;
-    align-items: center;
-    margin: 50px 100px;
+.players {
+    background-image: url(../imgs/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 00px;
     padding: 50px;
-    background-color: var(--background-color);
-    p {
-        font-size: 20px;
-        padding: 10px;
-    }
-    img {
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
+    .player {
+        display: flex;
+        background-color: var(--background-color);
+        margin: 10px;
+        img {
+            width: 250px;
+            height: 250px;
+        }
+        .player__content {
+            padding: 10px;
+            max-width: 100%;
+            height: 230px;
+            overflow: hidden;
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
 }
