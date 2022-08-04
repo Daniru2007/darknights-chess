@@ -11,6 +11,29 @@
     }
 }
 
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--head-font-color);
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0%);
+    transform-origin: bottom right;
+    background-color: var(--font-color);
+    height: 3px;
+    left: 0px;
+    bottom: 0px;
+    transition: transform 500ms ease-in-out;
+}
+a:hover::after {
+    transform: scaleX(100%);
+    transform-origin: bottom left;
+}
+
 body,
 html {
     overflow-x: hidden;
@@ -148,6 +171,17 @@ html {
                 text-overflow: ellipsis;
             }
         }
+    }
+}
+
+.contact {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        font-size: 50px;
+        margin: 20px;
     }
 }
 
